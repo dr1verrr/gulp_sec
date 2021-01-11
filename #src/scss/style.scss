@@ -1,0 +1,64 @@
+/*ОБНУЛЯЮЩИЕ СТИЛИ, ОБЩИЕ ПАРАМЕТРЫ*/
+@import "../../node_modules/normalize.css/normalize";
+
+html,body {
+	font-family: 'Ubuntu';
+	font-size: 24px;
+	font-weight: 300;
+	background: #333;
+	color: #fff;
+	min-width: 320px;
+	overflow-x: hidden;
+	position: relative;
+	line-height: 26px;
+}
+/*ОБНУЛЯЮЩИЕ СТИЛИ, ОБЩИЕ ПАРАМЕТРЫ*/
+
+
+/*<ОБОЛОЧКА*/
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+.container{
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+/*ОБОЛОЧКА*/
+
+/*ПЕРЕМЕННЫЕ*/
+$minWidth: 320px;
+$maxWidth: 1238px;
+$maxWidthContainer: 1170;
+/*ПЕРЕМЕННЫЕ*/
+
+@import "global";
+@import "mixins";
+@import "vars";
+
+/*ПОДКЛЮЧЕНИЕ ШРИФТОВ*/
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+/*ПОДКЛЮЧЕНИЕ ШРИФТОВ*/
+
+/*ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ*/
+@import "forms";
+@import "ui";
+/*ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ*/
+
+
+/*СТИЛИ СТРАНИЦ И ЭЛЕМЕНТОВ*/
+@import "header";
+@import "home";
+@import "footer";
+/*СТИЛИ СТРАНИЦ И ЭЛЕМЕНТОВ*/
+
+/*БИБЛИОТЕКИ*/
+
+@import "libs/slick";
+
+/*БИБЛИОТЕКИ*/
